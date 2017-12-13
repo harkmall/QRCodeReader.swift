@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,12 +70,21 @@
                                     <constraint firstAttribute="height" constant="200" id="m30-Dq-t2L"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTV-bw-XWO">
+                                <rect key="frame" x="126" y="424" width="122" height="30"/>
+                                <state key="normal" title="Scan from Photos"/>
+                                <connections>
+                                    <action selector="scanFromPhotosAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K99-hA-bfo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DTV-bw-XWO" firstAttribute="top" secondItem="MLx-jM-72O" secondAttribute="bottom" constant="16" id="MeS-Nk-WQo"/>
                             <constraint firstItem="MLx-jM-72O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TFI-BI-W1n"/>
                             <constraint firstItem="ROG-L6-Gnz" firstAttribute="centerX" secondItem="MLx-jM-72O" secondAttribute="centerX" id="UgF-Hf-Eb1"/>
                             <constraint firstItem="MLx-jM-72O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="efo-xp-hOO"/>
+                            <constraint firstItem="DTV-bw-XWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l54-aA-eTp"/>
                             <constraint firstItem="MLx-jM-72O" firstAttribute="top" secondItem="ROG-L6-Gnz" secondAttribute="bottom" constant="16" id="mfA-gu-dvY"/>
                         </constraints>
                     </view>
